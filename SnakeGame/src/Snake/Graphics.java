@@ -99,10 +99,10 @@ public class Graphics extends JPanel implements ActionListener {
 
     protected void move() {
         for (int i = snakeLength; i > 0; i--) {
-            snakePosX[i] = snakePosX[i-1];
-            snakePosY[i] = snakePosY[i-1];
-        }
+            snakePosX[i] = snakePosX[i - 1];
+            snakePosY[i] = snakePosY[i - 1];
 
+        }
         switch (direction) {
             case 'U' -> snakePosY[0] -= TICK_SIZE;
             case 'D' -> snakePosY[0] += TICK_SIZE;
